@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header { 
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100px;
+    background: silver;
+}
+
+#menuTop{
+    position: absolute;
+    bottom: 0;
+    width: 1000px;
+    height: 50px;
+    background: red;
+}
+    .nivel1 { 
+        float: left;
+        width: 19.2%;
+        text-align: center; 
+        line-height: 50PX;
+        border: 4px solid #fff;
+        background: linear-gradient(#900, #600)
+
+
+    }
+    .nivel1 a {color: #fff;}
+    
+    .nivel1 :hover{ background: purple;}
+    
+    .nivel2 {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        line-height: 42px;
+        border-top: 4px solid #fff;
+        border-left: 4px solid #fff;
+        border-right: 4px solid #fff;
+        background: blue;
+        color: white;
+    }
+
+    .nivel2:hover {
+        background: blue;
+        transition: backgraund 5s ease-out;
+    }
+
+    #menuTop ul li ul { display: none}
+    #menuTop ul li:hover ul {display: block;}
+
+
+    #slide {
+        position: relative;
+        margin: auto;
+        width: 400px;
+        height: 500px;
+        top: 150px;
+        
+    }
+    
+    #slide ul{
+        position: relative;
+        bottom: 140px;
+         right: 300px;
+        width: 1000px;
+        height: 800px;
+        /*background: url(../image/slide01.jpg);*/
+    }
+    
+    #slide ul li img{
+        position: absolute;
+        opacity:0;
+        left: 0;
+        transition: opacity 1s ease-out;
+    }
+    
+    #slide ul li label{
+        position: relative;
+        z-index: 3;
+        top: 485px;
+        left: 400px;
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin: 0 2px;
+        background: blue;
+        border: 3px solid white;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+    
+    #slide ul li label:hover{
+        background: #aaa;
+    }
+    
+    #slide ul li label:active{
+        background: magenta;
+    }
+    
+    #slide ul li input {
+        display: none;
+    }
+    
+    #slide ul li input#boton-1:checked ~ #foto01{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-2:checked ~ #foto02{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-3:checked ~ #foto03{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-4:checked ~ #foto04{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-5:checked ~ #foto05{
+        opacity:1;
+    }
+    #slide ul li input#boton-6:checked ~ #foto06{
+        opacity:1;
+    }
+    #slide ul li input#boton-7:checked ~ #foto07{
+        opacity:1;
+    }
+    #slide ul li input#boton-8:checked ~ #foto08{
+        opacity:1;
+    }
+    #slide ul li input#boton-9:checked ~ #foto09{
+        opacity:1;
+    }
+    #slide ul li input#boton-10:checked ~ #foto010{
+        opacity:1;
+    }
+
+#botoneraSlide{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 26px;
+    background: url(../image/blackBotonesSlide.jpg);
+    background:red;
+    left: 0px;
+    bottom: 10px;
+    border: 1px solid white;
+}
+/*pagina principal*/
+
+    section{
+        position: absolute;
+        background: url(../image/backboton.png) no-repeat;
+        width: 1000px;
+        height: 400px;
+        top:620px;
+        right: 2px;
+        right:155px;
+    }
+
+    button {
+        -webkit-appearance: none;
+        background: transparent;
+        border: 0;
+        outline:0;
+      }
+      
+      svg {
+        padding: 5px;
+      }
+      
+      .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -45px;
+        margin-left: -35px;
+        width: 70px;
+        height: 90px;
+      }
+      
+      .left {
+        left: 5%;
+      }
+      
+      .right {
+        left: 95%;
+      }
+      
+      .left:hover polyline,
+      .left:focus polyline {
+        stroke-width: 3;
+      }
+      
+      .left:active polyline {
+        stroke-width: 6;
+        transition: all 100ms ease-in-out;
+      }
+      
+      .right:hover polyline,
+      .right:focus polyline {
+        stroke-width: 3;
+      }
+      
+      .right:active polyline {
+        stroke-width: 6;
+        transition: all 100ms ease-in-out;
+      }
+      
+      polyline {
+        transition: all 250ms ease-in-out;
+      }
+        #caja{
+            position: relative;
+            top: 390px;
+            background: url(../image/blackBoton01.png);
+            width:1001px;
+            height: 200px;
+            left: 155px;
+        }
+        
+        #noticias{
+            position: relative;
+            left: 15px;
+            color: white;
+            top: 18px;
+        
+        }
+        
+        #noticias ol li {
+            color: white;
+            top: 20px;
+            position: relative;
+            list-style: inside;
+            
+        }
+        #nov{
+            position: relative;
+            bottom: 130px;
+            color: white;
+            left: 250px;
+           
+        }
+        #nov ol li {
+            color: white;
+            top: 25px;
+         position: relative;
+         list-style: inside;
+       
+        }
+        #galerias{
+                position: relative;
+                bottom: 280px;
+                left: 470px;
+                color: white;
+                width:300px;
+        }
+        #galerias img{
+         border: 6px solid wheat;
+         top: 30px;
+         position: relative;
+         width:150px;
+        }
+        #rs{
+            position: relative;
+            bottom: 410px;
+            left: 700px;
+            color: white;
+            width:300px;
+ 
+        }
+        
+        #rs ul li{
+            float: left;
+            width: 40PX;
+            height: 40px;
+            border-radius: 100%;
+            background: white;
+            margin:15px;
+        }
+        #rs ul li:first-child{
+            background: url(../image/facebook.png);
+            background-size: cover;
+            bottom: 15px;
+        }
+        #rs ul li:nth-child(2){
+            background: url(../image/twitter.png);
+            background-size: cover;
+            bottom: 15px;
+
+        }
+        #rs ul li:nth-child(3){
+            background: url(../image/instagram.png);
+            background-size: cover;
+            bottom: 15px;
+        }
+        #rs ul li:last-child{
+            background: url(../image/youTube.png);
+            background-size: cover;
+            bottom: 15px;
+        }
+
+        #rs ul li a{
+            float: left;
+            width: 40PX;
+            height: 40px;
+            border-radius: 100%;
+            top: 40px;
+
+        }
+
+footer{
+    position: relative;
+    background: black;
+    color: white;
+    width: 1002px;
+    top: 390px;
+    left: 155px;
+    text-align: center;
+}

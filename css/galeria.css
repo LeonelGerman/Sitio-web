@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+header { 
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100px;
+    background: silver;
+}
+nav{
+    position: relative;
+    margin:auto;
+    width:1000px;
+    height:45px;
+    left: 0px;
+    background: linear-gradient(#900, #600);
+    top: 102px;
+    border-bottom: 1px solid white;
+}
+
+nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 45px;
+    background: white;
+ 
+}
+    nav ul a li { 
+        float: left;
+        width: 124px;
+        text-align: center; 
+        color: aliceblue;
+        line-height: 45PX;
+        border-right: 1px solid #fff;
+        background: linear-gradient(#900, #600);
+        font-size: 14px;
+         }
+
+
+    #slide {
+        position: relative;
+        margin: auto;
+        width: 400px;
+        height: 500px;
+        top: 150px;
+        
+    }
+    
+    #slide ul{
+        position: relative;
+        bottom: 100px;
+         right: 300px;
+        width: 1000px;
+        height: 800px;
+        /*background: url(../images/slide01.jpg);*/
+    }
+    
+    #slide ul li img{
+        position: absolute;
+        opacity:0;
+        left: 0;
+        transition: opacity 1s ease-out;
+    }
+    
+    #slide ul li label{
+        position: relative;
+        z-index: 3;
+        top: 445px;
+        left: 400px;
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin: 0 2px;
+        background: blue;
+        border: 3px solid white;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+    
+    #slide ul li label:hover{
+        background: #aaa;
+    }
+    
+    #slide ul li label:active{
+        background: magenta;
+    }
+    
+    #slide ul li input {
+        display: none;
+    }
+    
+    #slide ul li input#boton-1:checked ~ #foto01{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-2:checked ~ #foto02{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-3:checked ~ #foto03{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-4:checked ~ #foto04{
+        opacity:1;
+    }
+    
+    #slide ul li input#boton-5:checked ~ #foto05{
+        opacity:1;
+    }
+    #slide ul li input#boton-6:checked ~ #foto06{
+        opacity:1;
+    }
+    #slide ul li input#boton-7:checked ~ #foto07{
+        opacity:1;
+    }
+    #slide ul li input#boton-8:checked ~ #foto08{
+        opacity:1;
+    }
+    #slide ul li input#boton-9:checked ~ #foto09{
+        opacity:1;
+    }
+    #slide ul li input#boton-10:checked ~ #foto010{
+        opacity:1;
+    }
+
+
+#botoneraSlide{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 26px;
+    background: url(../images/blackBotonesSlide.jpg);
+    background:red;
+    left: 0px;
+    bottom: 10px;
+    border: 1px solid white;
+}
+/*pagina principal*/
+
+    section{
+        position: absolute;
+        background: url(../images/backboton.png) no-repeat;
+        width: 1000px;
+        height: 400px;
+        top:620px;
+        left:175px;
+        }
+        #galeria {
+            position: relative;
+            margin: auto;
+            width: 870px;
+            height: 310px;
+            right: 20px;
+            background: white;
+        }
+        
+        #galeria ul#cajaGaleria{
+            position: relative;
+            width: 1000px;
+            margin: auto;
+            bottom:1px;
+            right:45px;
+            height:500px;
+            background: url(../images/backboton.png);
+            box-shadow: 0px 0px 30px #222;
+        }
+        
+        #galeria ul#cajaGaleria li div{
+            position:absolute;
+            opacity: 0;
+            left: 180px;
+            width:800px;
+            top:20px;
+            transition: all 1s ease-out;
+            -webkit-transition:all 1s ease-out ;
+            -moz-transition: all 1s ease-out;
+            -o-transition: all 1s ease-out;
+        }
+        #galeria ul#cajaGaleria li div#galeria00{
+            opacity:1;
+        }
+        
+        #galeria ul#cajaGaleria div h1{
+            position: absolute;
+            z-index: 1;
+            top: 2px;
+            left: 20px;
+            color: red;
+            font-weight: 100;
+        }
+        #galeria ul#cajaGaleria li div p{
+            position: absolute;
+            z-index: 1;
+            bottom: 5px;
+            background: rgba(0, 0, 0, .4);
+            color:aqua;
+            width:750px;
+            line-height: 60px;
+            padding-left: 20px;
+        }
+        
+        #galeria ul#cajaGaleria li label{
+            position: relative;
+            z-index: 3;
+            width:151px;
+            height: 70px;
+            top:9px;
+            left: 10px;
+            margin: 2px 0;
+            cursor: pointer;
+        }
+        #galeria ul#cajaGaleria li input {
+            display: none;
+        }
+         input#btn01:checked ~ #galeria01{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn02:checked ~ #galeria02{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn03:checked ~ #galeria03{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn04:checked ~ #galeria04{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn05:checked ~ #galeria05{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn06:checked ~ #galeria06{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn07:checked ~ #galeria07{
+            opacity: 1;
+            z-index: 1;
+         }
+         input#btn08:checked ~ #galeria08{
+            opacity: 1;
+            z-index: 1;
+         }
+        
+        
+   #caja{
+            position: relative;
+            top: 390px;
+            background: url(../images/blackBoton01.png);
+            width:1001px;
+            height: 200px;
+            left: 175px;
+        }
+        
+        #noticias{
+            position: relative;
+            left: 15px;
+            color: white;
+            top: 18px;
+        
+        }
+        
+        #noticias ol li {
+            color: white;
+            top: 20px;
+            position: relative;
+            list-style: inside;
+            
+        }
+        #nov{
+            position: relative;
+            bottom: 130px;
+            color: white;
+            left: 250px;
+           
+        }
+        #nov ol li {
+            color: white;
+            top: 25px;
+         position: relative;
+         list-style: inside;
+       
+        }
+        #galerias{
+                position: relative;
+                bottom: 280px;
+                left: 470px;
+                color: white;
+                width:300px;
+        }
+        #galerias img{
+         border: 6px solid wheat;
+         top: 30px;
+         position: relative;
+         width:150px;
+        }
+        #rs{
+            position: relative;
+            bottom: 410px;
+            left: 700px;
+            color: white;
+            width:300px;
+ 
+        }
+        
+        #rs ul li{
+            float: left;
+            width: 40PX;
+            height: 40px;
+            border-radius: 100%;
+            background: white;
+            margin:15px;
+        }
+        #rs ul li:first-child{
+            background: url(../images/facebook.png);
+            background-size: cover;
+            bottom: 15px;
+        }
+        #rs ul li:nth-child(2){
+            background: url(../images/twitter.png);
+            background-size: cover;
+            bottom: 15px;
+
+        }
+        #rs ul li:nth-child(3){
+            background: url(../images/instagram.png);
+            background-size: cover;
+            bottom: 15px;
+        }
+        #rs ul li:last-child{
+            background: url(../images/youTube.png);
+            background-size: cover;
+            bottom: 15px;
+        }
+
+        #rs ul li a{
+            float: left;
+            width: 40PX;
+            height: 40px;
+            border-radius: 100%;
+            top: 40px;
+
+        }
+blockquote{
+    position: relative;
+    background: black;
+    color: white;
+    width: 1002px;
+    top: 390px;
+    left: 175px;
+    text-align: center;
+}
